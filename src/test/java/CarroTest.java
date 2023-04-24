@@ -40,4 +40,19 @@ class CarroTest {
                         "Item: Maçaneta Cromada - Valor Unitario: 400.0\n"+
                         "Item: Bancos Couro - Valor Unitario: 1500.0\n", onix.getVersao());
     }
+
+    @Test
+    void deveRetornarExecacaoCarroSemVersao() {
+        try {
+            Carro onix= new Carro();
+            onix.getVersao();
+            fail();
+        }
+        catch (NullPointerException e) {
+            assertEquals("Este carro não tem Versão registrado", e.getMessage());
+        }
+    }
+
+
+
 }

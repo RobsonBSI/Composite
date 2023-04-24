@@ -3,7 +3,7 @@ public class Carro {
 
     public String getVersao() {
         if (this.versao == null) {
-            throw new NullPointerException(" este carro não tem Modelo registrado");
+            throw new NullPointerException("Este carro não tem Versão registrado");
         }
         return this.versao.getModelo();
     }
