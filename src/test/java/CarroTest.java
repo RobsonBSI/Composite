@@ -5,8 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class CarroTest {
     @Test
     void deveRetornarVersaoComAcessorios() {
-        Acessorios acessorio1 = new Acessorios("Pacote 1");
-        Acessorios acessorio2 = new Acessorios("Pacote 2");
+        Acessorio acessorio1 = new Acessorio("Pacote 1");
+        Acessorio acessorio2 = new Acessorio("Pacote 2");
 
         Item item1= new Item("Farol Nebrina", 2700.0F);
         Item item2= new Item("Calha de Chuva", 650.0F);
@@ -21,7 +21,7 @@ class CarroTest {
         acessorio2.addModelo(item3);
         acessorio2.addModelo(item4);
 
-       Acessorios hatch= new Acessorios("Modelo Hatch");
+       Acessorio hatch= new Acessorio("Modelo Hatch");
        hatch.addModelo(acessorio1);
        hatch.addModelo(acessorio2);
 

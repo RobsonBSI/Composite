@@ -1,12 +1,10 @@
-
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class Acessorios extends Modelo{
+public class Acessorio extends Modelo {
     private List<Modelo> modelos;
 
-    public Acessorios(String descricao) {
+    public Acessorio(String descricao) {
         super(descricao);
         this.modelos= new ArrayList<Modelo>();
     }
